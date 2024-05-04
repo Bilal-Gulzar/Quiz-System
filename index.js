@@ -1,5 +1,6 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
-import chalk from 'chalk';
+import chalk from "chalk";
 // Quiz System
 let score = 0;
 // const answer: {
@@ -13,7 +14,11 @@ const answer1 = await inquirer.prompt({
     name: "question01",
     type: "list",
     message: chalk.italic.yellowBright("JavaScript was invented by?"),
-    choices: [chalk.italic.blue("a) Brendan Eichin"), chalk.italic.green("b) James Gosling"), chalk.italic.red("c) John Backus")]
+    choices: [
+        chalk.italic.blue("a) Brendan Eichin"),
+        chalk.italic.green("b) James Gosling"),
+        chalk.italic.red("c) John Backus"),
+    ],
 });
 switch (answer1.question01) {
     case chalk.italic.blue("a) Brendan Eichin"):
@@ -27,7 +32,11 @@ const answer2 = await inquirer.prompt({
     name: "question02",
     type: "list",
     message: chalk.italic.yellowBright("when javascript was invented?"),
-    choices: [chalk.italic.blue("a) March 1992"), chalk.italic.green("b) May 1996"), chalk.italic.red("c) September 1996")]
+    choices: [
+        chalk.italic.blue("a) March 1992"),
+        chalk.italic.green("b) May 1996"),
+        chalk.italic.red("c) September 1996"),
+    ],
 });
 switch (answer2.question02) {
     case chalk.italic.green("b) May 1996"):
@@ -41,7 +50,11 @@ const answer3 = await inquirer.prompt({
     name: "question03",
     type: "list",
     message: chalk.italic.yellowBright("What is the chemical formula for water?"),
-    choices: [chalk.italic.blue("a) CO"), chalk.italic.green("b) NaOH"), chalk.italic.red("c) H₂O")]
+    choices: [
+        chalk.italic.blue("a) CO"),
+        chalk.italic.green("b) NaOH"),
+        chalk.italic.red("c) H₂O"),
+    ],
 });
 switch (answer3.question03) {
     case chalk.italic.red("c) H₂O"):
@@ -55,7 +68,11 @@ const answer4 = await inquirer.prompt({
     name: "question04",
     type: "list",
     message: chalk.italic.yellowBright("When RMS Titanic sank in the North Atlantic Ocean?"),
-    choices: [chalk.italic.blue("a) 15 April 1912"), chalk.italic.green("b) 23 may 1912"), chalk.italic.red("c) 11 febraury 1912")]
+    choices: [
+        chalk.italic.blue("a) 15 April 1912"),
+        chalk.italic.green("b) 23 may 1912"),
+        chalk.italic.red("c) 11 febraury 1912"),
+    ],
 });
 switch (answer4.question04) {
     case chalk.italic.blue("a) 15 April 1912"):
@@ -69,7 +86,11 @@ const answer5 = await inquirer.prompt({
     name: "question05",
     type: "list",
     message: chalk.italic.yellowBright("Who was First person to walk on the Moon?"),
-    choices: [chalk.italic.blue("a) Michael collins"), chalk.italic.green("b) Neil Armstrong"), chalk.italic.red("C) Buzz Aldrin ")]
+    choices: [
+        chalk.italic.blue("a) Michael collins"),
+        chalk.italic.green("b) Neil Armstrong"),
+        chalk.italic.red("C) Buzz Aldrin "),
+    ],
 });
 switch (answer5.question05) {
     case chalk.italic.green("b) Neil Armstrong"):
@@ -83,7 +104,11 @@ const answer6 = await inquirer.prompt({
     name: "question06",
     type: "list",
     message: chalk.italic.yellowBright("Who developed the first nuclear weapon?"),
-    choices: [chalk.italic.blue("a) Albert Einstein"), chalk.italic.green("b) Thomas Edison"), chalk.italic.red("c) J. Robert Oppenheimer")]
+    choices: [
+        chalk.italic.blue("a) Albert Einstein"),
+        chalk.italic.green("b) Thomas Edison"),
+        chalk.italic.red("c) J. Robert Oppenheimer"),
+    ],
 });
 switch (answer6.question06) {
     case chalk.italic.red("c) J. Robert Oppenheimer"):
